@@ -39,8 +39,9 @@
     max-width: 400px;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 2px 2px 3px #000000, -2px -2px 3px #ffffff11;
+    box-shadow: 2px 2px 3px #000000, -2px -2px 3px #ffffff11;/*,inset 2px 2px 3px #000000,inset -2px -2px 3px #ffffff11*/;
     transition: 0.4s;
+    backdrop-filter: blur(118px);
 
 
 }
