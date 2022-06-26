@@ -1,0 +1,124 @@
+
+.contact{
+
+    padding-top: 100px;
+
+
+}
+
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 80px;
+}
+
+.contact .container .info{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact .container .info > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+
+}
+
+.contact .container .info > div img{
+    max-width: 80px;
+
+}
+
+
+.contact .container .form {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background-image: url("../../../public/images/martina-guy-sends-a-message-from-phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    background-color: var(--body-color);
+    background-blend-mode: soft-light;
+}
+
+
+.contact .container .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form form input{
+    width: 100%;
+}
+
+.form form textarea{
+    width: 100%;
+    height: 210px;
+    resize: none;
+}
+
+
+.form form textarea,.form form input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--container-color);
+    color: white;
+    font-size: 14px;
+    border-radius: var(--border-num);
+    background-color: rgba(0, 0, 0, 0.188);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    /*border-left: 1px solid rgba(255, 255, 255, 0.16);*/
+
+}
+
+.form form button{
+    padding: 18px 70px;
+    cursor: pointer;
+    background-color: var(--darker-color);
+    color: white;
+    font-weight: 400;
+    border-radius: var(--border-num);
+    border: none;
+
+}
+
+
+@media(max-width:565px){
+
+    .contact .container .info{
+        flex-direction: column;
+    }
+    .contact .container .info > div{
+        flex-direction: column;
+
+    }
+
+    
+
+}
+
+
+@media(max-width:767px){
+    .contact .container .form {
+        min-width: 100%;
+    }
+    
+
+}
+
+
