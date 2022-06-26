@@ -24,13 +24,12 @@
 
 .home .container .home-data .name{
     font-size: var(--biggest-font-size);
+    line-height: 1.2;
 }
 .home .container .home-data .home_buttom{
     display: flex;
     gap: 20px;
     justify-content: center;
-
-
 }
 
 .home .container .home-data .home_buttom > a{
@@ -141,6 +140,18 @@
 
 
 @media (max-width: 575px) {
+
+    .home .container .home-social{
+        bottom: 90px;
+        left: 30px;
+    }
+
+    .home .container .home-scroll{
+        right: 30px;
+        bottom: 120px;
+        
+    }
+    
     .home .container .home-data .home_buttom{
         display: flex;
         flex-direction: column;

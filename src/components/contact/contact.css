@@ -2,6 +2,7 @@
 .contact{
 
     padding-top: 100px;
+    padding-bottom: 20px;
 
 
 }
@@ -87,7 +88,7 @@
 }
 
 .form form button{
-    padding: 18px 70px;
+    padding: 18px 55px;
     cursor: pointer;
     background-color: var(--darker-color);
     color: white;

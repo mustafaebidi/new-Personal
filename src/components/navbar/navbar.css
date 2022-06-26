@@ -35,11 +35,10 @@
     padding: 20px;
     bottom: 20px;
     border-radius: 5px;
-    width: 100%;
+    width: 89%;
     max-width: 400px;
     justify-content: space-between;
     z-index: 1000;
-
     box-shadow: 1px 2px 8px #000000, -2px -2px 3px #ffffff5e;
     transition: 0.4s;
 
