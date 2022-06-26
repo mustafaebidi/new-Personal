@@ -3,8 +3,6 @@
 
     padding-top: 100px;
     padding-bottom: 20px;
-
-
 }
 
 .contact .container{
@@ -44,7 +42,6 @@
     flex-direction: column;
     gap: 15px;
 
-    background-image: url("../../../public/images/martina-guy-sends-a-message-from-phone.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% ;
