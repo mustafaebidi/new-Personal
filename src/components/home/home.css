@@ -25,6 +25,7 @@
 .home .container .home-data .name{
     font-size: var(--biggest-font-size);
     line-height: 1.2;
+    color: white;
 }
 .home .container .home-data .home_buttom{
     display: flex;
