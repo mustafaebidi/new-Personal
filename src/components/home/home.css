@@ -21,7 +21,9 @@
 
 
 }
-
+.home .container .home-data .intro .intro{
+    font-weight: bold;
+}
 .home .container .home-data .name{
     font-size: var(--biggest-font-size);
     line-height: 1.2;
