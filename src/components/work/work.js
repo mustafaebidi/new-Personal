@@ -147,7 +147,7 @@ const works=[
 const Work=()=>{
 
     return(
-        <div className="works">
+        <div className="works" id="works">
             <h2 className="sec-title">Work</h2>
             <div className="container-fluid">
                 {works.map((work)=>{

@@ -26,7 +26,7 @@
 }
 .home .container .home-data .name{
     font-size: var(--biggest-font-size);
-    line-height: 1.2;
+    line-height: 1.3;
     color: white;
 }
 .home .container .home-data .home_buttom{
@@ -146,11 +146,11 @@
 
     .home .container .home-social{
         bottom: 90px;
-        left: 30px;
+        left: 20px;
     }
 
     .home .container .home-scroll{
-        right: 30px;
+        right: 20px;
         bottom: 120px;
         
     }

@@ -46,6 +46,15 @@
 
 }
 
+.nav .container ul .pointer{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    border-radius: 50%;
+}
+
 .nav .container ul.active{
     opacity: 0;
     visibility: hidden;
@@ -53,6 +62,13 @@
 }
 .nav .container ul li{
     transition: 0.4s;
+    border-radius: 50%;
+
+
+}
+
+.nav .container ul li.active{
+    background-color: var(--darker-color);
 
 }
 
@@ -72,7 +88,3 @@
     font-size: 20px;
 }
 
-.active_link{
-    background: linear-gradient(180deg, #a395e9, #a395e94b);
-    box-shadow: 0px 0px 8px rgb(210 157 240);
-}

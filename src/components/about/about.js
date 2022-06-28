@@ -28,7 +28,7 @@ const head=[
 
 const About=()=>{
     return(
-        <div className="about">
+        <div className="about" id="about">
             <h2 className="sec-title">About</h2>
             <div className="container">
                 <div className="img-con">

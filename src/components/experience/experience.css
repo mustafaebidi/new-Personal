@@ -18,10 +18,25 @@
     text-align: center;
     background-color: var(--container-color);
     border-radius: var(--border-num);
-    transform: scale(0.85);
+    transform: scale(0.81);
     padding: 50px 15px;
+    border: 2px dotted transparent;
+
+    transition:transform 0.4s; 
 
 }
+
+.skills .container .box:hover{
+    transform: scale(1);
+    border: 2px solid rgba(255, 255, 255, 0.079);
+    background-color: transparent;
+
+
+
+
+
+}
+
 
 .skills .container .box .skils-info{
     width: 40%;

@@ -4,7 +4,7 @@ import "./home.css"
 const Home=()=>{
 
     return(
-        <div className="home">
+        <div className="home" id="home">
             <div className="container">
                 <div className="home-data">
                     <div className="intro">
