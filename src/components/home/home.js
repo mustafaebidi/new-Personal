@@ -34,7 +34,7 @@ const Home=()=>{
 
                 </div>
                 <div className="home-scroll">
-                    <a href="#e">
+                    <a href="#about">
                         <i class="fa-solid fa-computer-mouse"></i>
                     </a>
                     <span>Scroll Down</span>

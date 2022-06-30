@@ -3,6 +3,7 @@ import { Fragment, useCallback, useEffect, useState } from "react"
 import ToggleHeader from "../toggleHeader/toggleHeader"
 import "./navbar.css"
 
+const click = new Audio('../../../audio/Mouse Click 01.mp3');
 
 
 
@@ -72,7 +73,9 @@ const Navbar=()=>{
                         
                         {navLinks.map((item,index)=>{
                             return(
-                                <li key={index} className={`${activeLink === index ? "active" :"" }`} onClick={()=>setActiveLink(index)}><a href={`#${item.href}`}><i class={`fa-solid ${item.icon}`}></i></a></li>
+                                <li key={index} className={`${activeLink === index ? "active" :"" }`} onClick={()=>{
+                                    click.play()
+                                    setActiveLink(index)}}><a href={`#${item.href}`}><i class={`fa-solid ${item.icon}`}></i></a></li>
                             )
                         })}
                     </ul>
