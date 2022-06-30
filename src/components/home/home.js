@@ -4,7 +4,7 @@ import "./home.css"
 const Home=()=>{
 
     return(
-        <div className="home" id="home">
+        <section className="home" id="home">
             <div className="container">
                 <div className="home-data">
                     <div className="intro">
@@ -40,7 +40,7 @@ const Home=()=>{
                     <span>Scroll Down</span>
                 </div>
             </div>  
-        </div>
+        </section>
     )
 
 }

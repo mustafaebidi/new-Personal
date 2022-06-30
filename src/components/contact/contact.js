@@ -4,7 +4,7 @@ import "./contact.css"
 
 const Contact=()=>{
     return(
-        <div className="contact" id="contact">
+        <section className="contact" id="contact">
             <h2 className="sec-title">Contact</h2>
 
             <div className="container">
@@ -22,10 +22,10 @@ const Contact=()=>{
                 <div className="form">
                     <form>
                         <div className="">
-                            <input type="text" placeHolder="Your Name" id="fname" name="fname" />
+                            <input type="text" placeholder="Your Name" id="fname" name="fname" />
                         </div>
                         <div>
-                            <input type="text" placeHolder="Your Email" id="fname" name="fname" />
+                            <input type="text" placeholder="Your Email" id="fname" name="fname" />
                         </div>
                         <div>
                             <textarea  placeholder="Your Message" name="message" ></textarea>
@@ -37,7 +37,7 @@ const Contact=()=>{
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

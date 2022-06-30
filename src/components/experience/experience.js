@@ -16,21 +16,21 @@ const skills=[
 
 const Experience=()=>{
     return(
-        <div className="skills" id="skills">
+        <section className="skills" id="skills">
             <h2 className="sec-title">Experience</h2>
 
             <div className="container">
-                {skills.map((skill)=>{
+                {skills.map((skill,indx)=>{
 
                     return(
-                        <div className="box">
+                        <div key={(indx+8)*50} className="box">
                             <h3>{skill.title}</h3>
                             <div className="skill-container">
                                 
-                                {skill.skills.map((oneSkill)=>{
+                                {skill.skills.map((oneSkill,index)=>{
                                     return(
                     
-                                            <div className="skils-info">
+                                            <div key={index} className="skils-info">
                                                 <i class="fa-solid fa-certificate"></i>
                                                 <div>{oneSkill}</div>  
                                             </div>                                        
@@ -44,7 +44,7 @@ const Experience=()=>{
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -28,7 +28,7 @@ const head=[
 
 const About=()=>{
     return(
-        <div className="about" id="about">
+        <section className="about" id="about">
             <h2 className="sec-title">About</h2>
             <div className="container">
                 <div className="img-con">
@@ -37,9 +37,9 @@ const About=()=>{
 
                 <div className="info">
                     <div className="head">
-                        {head.map(({head,icon,info})=>{
+                        {head.map(({head,icon,info},index)=>{
                             return(
-                                <div className="box">
+                                <div key={index} className="box">
                                     <i class={`fa-solid fa-${icon}`}></i>
                                     <h3>{head}</h3>
                                     <p>{info}</p>
@@ -51,7 +51,7 @@ const About=()=>{
                     I don't have much experience I promise you that you like my work</p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

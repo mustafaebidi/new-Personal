@@ -1,7 +1,9 @@
 
-import { Fragment, useState } from "react"
+import { Fragment, useCallback, useEffect, useState } from "react"
 import ToggleHeader from "../toggleHeader/toggleHeader"
 import "./navbar.css"
+
+
 
 
 const navLinks=[
@@ -13,7 +15,7 @@ const navLinks=[
         href:"about",
         icon:"fa-user-large"
     },
-    {
+    {   
         href:"skills",
         icon:"fa-book-open-reader"
     },
@@ -31,6 +33,33 @@ const navLinks=[
 const Navbar=()=>{
     const [stateOfUi,setToggle]=useState("hide")
     const [activeLink,setActiveLink]=useState(0)
+
+
+
+
+    const handleScroll=useCallback(()=>{
+        const sections=document.querySelectorAll("#root > section")
+
+        sections.forEach((element,index) => {
+            if (window.pageYOffset >= element.offsetTop && window.pageYOffset < (element.getBoundingClientRect().height + element.offsetTop)) {
+                setActiveLink(index)
+            }
+
+        });
+
+
+    },[])
+
+
+    useEffect(()=>{
+
+        window.addEventListener('scroll',handleScroll)
+
+        return()=>{
+            window.removeEventListener('scroll', handleScroll);
+        }
+
+    },[handleScroll])
 
     return(
         <Fragment>
