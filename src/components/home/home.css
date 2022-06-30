@@ -28,6 +28,10 @@
     font-size: var(--biggest-font-size);
     color: white;
 }
+
+.jop_title{
+    font-size: 1.25rem;
+}
 .home .container .home-data .home_buttom{
     display: flex;
     gap: 20px;
@@ -146,6 +150,10 @@
 
 
 @media (max-width: 575px) {
+
+    .jop_title{
+        font-size: 0.85rem;
+    }
 
     .home .container .home-social{
         bottom: 90px;
