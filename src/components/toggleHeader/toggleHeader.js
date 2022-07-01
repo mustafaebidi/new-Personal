@@ -32,9 +32,9 @@ const ToggleHeader=({setToggle,stateOfUi})=>{
 
     let toggle=(
         <div className='main-toggle' onClick={handleToggle}>
-            {elementsToggle.map((element)=>{
+            {elementsToggle.map((element,inedx)=>{
                 return(
-                    <i className={`fa-solid fa-${element.element} ${element.jop} ${stateOfUi === element.jop ?"active" :"" }`}></i>
+                    <i key={inedx} className={`fa-solid fa-${element.element} ${element.jop} ${stateOfUi === element.jop ?"active" :"" }`}></i>
                 )
             })}
         </div>

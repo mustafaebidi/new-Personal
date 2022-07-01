@@ -40,7 +40,7 @@ const About=()=>{
                         {head.map(({head,icon,info},index)=>{
                             return(
                                 <div key={index} className="box">
-                                    <i class={`fa-solid fa-${icon}`}></i>
+                                    <i className={`fa-solid fa-${icon}`}></i>
                                     <h3>{head}</h3>
                                     <p>{info}</p>
                                 </div>

@@ -31,7 +31,7 @@ const Experience=()=>{
                                     return(
                     
                                             <div key={index} className="skils-info">
-                                                <i class="fa-solid fa-certificate"></i>
+                                                <i className="fa-solid fa-certificate"></i>
                                                 <div>{oneSkill}</div>  
                                             </div>                                        
                                         

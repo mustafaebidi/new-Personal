@@ -37,17 +37,23 @@ const Navbar=()=>{
 
 
 
+    const checkReachSection=(section)=>{
+        if(window.pageYOffset >= section.offsetTop && window.pageYOffset < (section.getBoundingClientRect().height + section.offsetTop)){
+            return true
+
+        }
+        return false
+
+    }
 
     const handleScroll=useCallback(()=>{
         const sections=document.querySelectorAll("#root > section")
 
-        sections.forEach((element,index) => {
-            if (window.pageYOffset >= element.offsetTop && window.pageYOffset < (element.getBoundingClientRect().height + element.offsetTop)) {
+        sections.forEach((section,index) => {
+            if (checkReachSection(section)) {
                 setActiveLink(index)
             }
-
         });
-
 
     },[])
 
@@ -68,14 +74,13 @@ const Navbar=()=>{
             <div className="nav">
                 <div className="container">
                     <div className="logo">Mustafa</div>
-                    <div className="mode"></div>
                     <ul className={` ${stateOfUi === "show" ? "active" :"" }`}>
                         
                         {navLinks.map((item,index)=>{
                             return(
                                 <li key={index} className={`${activeLink === index ? "active" :"" }`} onClick={()=>{
                                     click.play()
-                                    setActiveLink(index)}}><a href={`#${item.href}`}><i class={`fa-solid ${item.icon}`}></i></a></li>
+                                    setActiveLink(index)}}><a href={`#${item.href}`}><i className={`fa-solid ${item.icon}`}></i></a></li>
                             )
                         })}
                     </ul>

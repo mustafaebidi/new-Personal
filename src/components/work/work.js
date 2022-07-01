@@ -159,11 +159,11 @@ const Work=()=>{
                             <div className="source">
 
                                 <a className="github" href={`${work.link.github}`}>
-                                    <i class="fa-brands fa-github"></i>
+                                    <i className="fa-brands fa-github"></i>
                                 </a>
 
                                 <a className="live" href={`${work.link.live}`}>
-                                <i class="fa-solid fa-eye"></i>
+                                <i className="fa-solid fa-eye"></i>
                             </a>
                             </div>
                         </div>
